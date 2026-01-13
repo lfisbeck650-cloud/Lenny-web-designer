@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>LENNY.DEV - Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <h1><a href="index.html">LENNY<span>.</span>DEV</a></h1>
+        <nav>
+            <a href="projects.html">Projekte</a>
+            <a href="about.html">Über mich</a>
+            <a href="contact.html" class="btn">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Du möchtest eine Website von mir? Dann schreib mir eine Nachricht!</p>
+
+        <!-- Formsubmit Formular -->
+        <form class="contact-form" action="https://formsubmit.co/el/rohipo" method="POST">
+            <!-- Honeypot zum Schutz vor Spam -->
+            <input type="text" name="_honey" style="display:none">
+
+            <!-- Captcha deaktivieren -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Felder für User-Input -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="E-Mail" required>
+            <textarea name="message" placeholder="Deine Nachricht" rows="5" required></textarea>
+
+            <button class="btn" type="submit">Absenden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lenny Dev</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

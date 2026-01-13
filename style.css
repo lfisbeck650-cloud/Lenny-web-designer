@@ -1,0 +1,263 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav h1 {
+    font-size: 24px;
+}
+
+.nav h1 span {
+    color: #6366f1;
+}
+
+.nav h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #6366f1;
+}
+
+/* Buttons */
+.btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #4f46e5;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    padding: 10px;
+}
+
+.project p {
+    padding: 0 10px 20px;
+    color: #cbd5f5;
+}
+
+/* Overlay Text beim Hover */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.project:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background: #0f172a;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #64748b;
+}
+
+.contact-form .info {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-overlay {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
