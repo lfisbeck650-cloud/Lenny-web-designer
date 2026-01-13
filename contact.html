@@ -24,14 +24,8 @@
         <h2>Kontakt</h2>
         <p>Du möchtest eine Website von mir? Dann schreib mir eine Nachricht!</p>
 
-        <!-- Formsubmit Formular -->
-        <form class="contact-form" action="https://formsubmit.co/el/rohipo" method="POST">
-            <!-- Honeypot zum Schutz vor Spam -->
-            <input type="text" name="_honey" style="display:none">
-
-            <!-- Captcha deaktivieren -->
-            <input type="hidden" name="_captcha" value="false">
-
+        <!-- PHP Formular -->
+        <form class="contact-form" action="send.php" method="POST">
             <!-- Felder für User-Input -->
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="E-Mail" required>
@@ -48,6 +42,7 @@
 
 </body>
 </html>
+
 
 
 
